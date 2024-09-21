@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.categorycard{
+  padding-left: 10%;
+display: grid;
+grid-template-columns: auto auto auto;
+}.flip-card {
+background-color: transparent;
+width: 300px;
+height: 300px;
+perspective: 1000px; 
+padding-right:10% ;/* Remove this if you don't want the 3D effect */
+}
+h3{margin: 0;
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-transform: none;
+  font-family: ambroise-std;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #e7bd74;
+
+}
+.product-list{
+  display: flex;
+  margin-left: 30px;
+  overflow: auto;
+}
+
+.category {
+  margin-bottom: 20px;
+  width: 100%;
+
+}
+.category-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+#cartbutton {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  margin-left: 40px;
+  transform: translateX(-50%);
+  z-index: 999; /* Make the container span the entire width */
+}
+.button{
+    display: flex;
+}
+table{
+  width: 100%;
+}
+td{
+  color: aliceblue;
+}
+.product {
+  border-radius: 90px;
+  background-color:rgba( 0,0,0,0.4);
+  display: block;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  color: #fff;
+  padding-left: 5%;
+}
+.productfull{
+  margin-bottom: 10px;
+}
+.product-image {
+  flex: 0 0 100px;
+  
+}
+.product-image img {
+  width: 100%;
+  aspect-ratio: 2/2;
+  border-radius: 20px;
+}
+.search-bar {
+  margin-top: 20px;
+}
+
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden; /* Safari */
+backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+background-color: #bbb;
+color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+background-color: black;
+opacity:0.8;
+color: white;
+transform: rotateY(180deg);
+
+}
+.card{
+display: grid;
+grid-template-columns: auto auto;
+row-gap: 0;
+height: 30px;
+}
+@media only screen and (max-width: 1000px){
+  .categorycard{
+
+    text-align:center;
+    grid-template-columns: auto auto;
+    
+    }
+    .flip-card {
+      width: 60%;
+      padding-bottom: 15px;
+      }
+
+}
+@media only screen and (max-width: 800px){
+.categorycard{
+
+text-align:center;
+grid-template-columns: auto;
+}
+.flip-card {
+  width: 60%;
+  
+  }}
+body{
+
+background-image: url(../img/3277+Front.jpg);
+background-position: center center;
+background-size: cover;
+background-attachment: scroll;
+background-repeat: no-repeat;
+position: relative;
+display: flexbox;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+.container{
+    text-align: center;
+    margin-bottom: 15px;
+}
+  #mySearch {
+    padding: 10px;
+    border: 2px solid #e7bd74;
+    border-radius: 7px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 0.3;
+    color: #000000; /* Text color */
+    transition: all 0.3s ease;
+  }
+  
+  #mySearch:focus {
+    outline: none;
+    background-color: rgb(255, 255, 255); /* Fully opaque on focus */
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #e1ab4e; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #5c5236; /* Lighter shade on hover */
+  }
+  
+  .search {
+    display: none; /* Hide the search results initially */
+    background-color: white; /* Adjust opacity if needed */
+    color: #fffbfb; /* Text color */
+    border: 2px solid #e7bd74;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+  }
+h1 a {
+    text-decoration: none;
+    color: rgb(247, 247, 247);
+}
+h1 {
+    width: 100%;
+    opacity: 1;
+    font-family: Roboto Serif;
+    font-size: 70px;
+    text-transform: uppercase;
+    line-height: 1em;
+    font-weight: 100;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom:
+     20px;
+}
+.site-tagline {
+    margin: 0;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-transform: none;
+    font-family: ambroise-std;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #e7bd74;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #c2c2c2;
+}
+
+.contact-info p {
+    text-align: center;
+    font-family: Lato;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0.8em 0;
+    color: #c2c2c2;
+}
+.contact-info{
+    padding-bottom: 5%;
+}
+
+@media only screen and (min-width: 780px) {
+    h1 {
+        font-weight: 300;
+        font-size: 85px;
+
+    }
+    .site-tagline {
+        font-family: ambroise-std;
+        font-weight: 300;
+        
+        font-size: 51px;
+        
+    }
+}
+

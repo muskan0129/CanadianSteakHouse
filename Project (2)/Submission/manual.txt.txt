@@ -1,0 +1,25 @@
+Welcome Page:
+
+
+Hover over the cards below to flip them and reveal all the products with prices.
+
+[Product Card 1] [Product Card 2] [Product Card 3]
+
+Click on the search icon to navigate to the search page.
+
+Menu:
+
+Search: Click here to search for products.
+Cart: Click here to view your cart, including the total and the products bought with their prices.
+Profile/User Info:
+
+
+
+Hover over the labels below to view your information:
+
+First Name: [First Name]
+Middle Name: [Middle Name]
+Last Name: [Last Name]
+Email: [Email Address]
+
+Click on the "Edit" button below to edit your profile information.

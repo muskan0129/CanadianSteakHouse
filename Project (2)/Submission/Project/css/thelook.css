@@ -1,0 +1,87 @@
+body{
+    background-image: url(../img/3277+Front.jpg);
+    background-position: center center;
+background-size: cover;
+background-attachment: scroll;
+background-repeat: no-repeat;
+position: relative;
+display: flexbox;
+}
+h1 a {
+    text-decoration: none;
+    color: rgb(247, 247, 247);
+}
+h1 {
+    width: 100%;
+    opacity: 1;
+    font-family: Roboto Serif;
+    font-size: 70px;
+    text-transform: uppercase;
+    line-height: 1em;
+    font-weight: 100;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 0;
+}
+.site-tagline {
+    margin: 0;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-transform: none;
+    font-family: ambroise-std;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #e7bd74;
+    margin-bottom: 65px;
+}
+.slider {
+    width: 100%;
+}
+.slider img{
+    aspect-ratio: 3/3;
+    width: 100%;
+}
+.about-me {
+    text-align: center;
+    color: white;
+    font-size: 26px; 
+}
+
+fieldset {
+    color: white;
+    font-size: 20px;
+}
+fieldset label {
+    color: white;
+    font-size: 20px;
+}
+.contact-info p {
+    text-align: center;
+    font-family: Lato;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0.8em 0;
+    color: #c2c2c2;
+}
+.contact-info{
+    padding-bottom: 5%;
+}
+@media only screen and (min-width: 780px) {
+    .slider img{
+        aspect-ratio: 3/3;
+        width: 70%;
+        padding-left: 15%;
+        padding-right:15%;
+}
+}

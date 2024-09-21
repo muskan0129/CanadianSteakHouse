@@ -1,0 +1,39 @@
+<!-- 
+  authors:Manik Nagdev(c0901513)
+Muskan Muskan(c0906499)
+Sukhveer Singh(c0907196)
+Mohammad Yameen(c0906420)--><!DOCTYPE html>
+<html>
+<head>
+    <script src="../js/jQFormsLogin.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/jQForms.css">
+	<link rel="stylesheet" href="../css/header.css">
+	<title>Login Page</title>
+</head>
+<body>
+	<div class="header">
+		<div class="header_grid">
+			<div class="grid-item" id="current"><a href="menu.html">MENU</a></div>
+			<div class="grid-item"><a href="location.html">CONTACT US</a></div>
+			<div class="grid-item"><a href="thelook.html">ABOUT US</a></div>
+		</div>
+	</div>
+	<h1 class="site-title">
+		<a href="/">Canadian Steak House</a>
+	</h1>
+	<p class="site-tagline" data-shrink-original-size="52">The West End's Open Grill</p>
+	<form id="login-form" action="../php/jQFormsLogin.php" method="post">
+		<h1>Login</h1>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required><br>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required><br>
+		<input type="submit" value="Login">
+	</form>
+	<div class= "sideline">
+	<p >Don't have an account? <a href="../index.html">Register now</a></p></div>
+</body>
+</html>
